@@ -420,11 +420,12 @@ a {
         margin: 15px 0; } }
     .footer__bad svg {
       width: 596px;
-      height: auto;
+      height: 87px;
       fill: #9b9b9b; }
       @media screen and (max-width: 1140px) {
         .footer__bad svg {
-          width: 100%; } }
+          width: 100%;
+          height: auto; } }
   .footer__logo {
     margin: 20px 0 12px 20px; }
     @media screen and (max-width: 1140px) {
@@ -1447,6 +1448,15 @@ a {
   fill: white; }
   @media screen and (max-width: 1140px) {
     .icon-cart {
+      width: 13px;
+      height: 13px; } }
+
+.icon-tablets {
+  width: 27px;
+  height: 28px;
+  fill: white; }
+  @media screen and (max-width: 1140px) {
+    .icon-tablets {
       width: 13px;
       height: 13px; } }
 
