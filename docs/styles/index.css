@@ -139,6 +139,7 @@ a {
   text-decoration: none; }
 
 .site {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -149,10 +150,14 @@ a {
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  overflow: hidden; }
 
 .header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
   z-index: 10; }
   .header-body {
     background: #31332d;
@@ -447,7 +452,8 @@ a {
 
 .head {
   position: relative;
-  height: 680px;
+  height: 740px;
+  padding-top: 60px;
   background: url(../assets/img/head.png) 50% 50% no-repeat;
   background-size: cover;
   z-index: 2; }
@@ -1551,6 +1557,7 @@ a {
 .main {
   position: relative;
   background: #f1f2f6;
+  padding-top: 60px;
   z-index: 1; }
   @media screen and (max-width: 1140px) {
     .main {
