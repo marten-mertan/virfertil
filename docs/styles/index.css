@@ -277,6 +277,16 @@ a {
   @media screen and (max-width: 1140px) {
     .container {
       padding: 0; } }
+  .container-footer {
+    max-width: 1920px;
+    padding: 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto; }
+    @media screen and (max-width: 1140px) {
+      .container-footer {
+        padding: 0; } }
 
 .footer {
   position: fixed;
@@ -357,13 +367,15 @@ a {
         order: 3; } }
     .footer-bottom__company a {
       color: #48bdc4; }
-  @media screen and (max-width: 1140px) {
-    .footer-contacts {
-      order: 2;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      margin-bottom: 8px; } }
+  .footer-contacts {
+    flex: 0 0 auto; }
+    @media screen and (max-width: 1140px) {
+      .footer-contacts {
+        order: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 8px; } }
   .footer-phone {
     margin: 20px 12px 12px 0; }
     @media screen and (max-width: 1140px) {
@@ -416,7 +428,7 @@ a {
       .footer__number {
         font-size: 14px; } }
   .footer__bad {
-    width: 596px;
+    width: 1373px;
     margin: 10px 12px 7px; }
     @media screen and (max-width: 1140px) {
       .footer__bad {
@@ -424,8 +436,8 @@ a {
         width: 100%;
         margin: 15px 0; } }
     .footer__bad svg {
-      width: 596px;
-      height: 87px;
+      width: 100%;
+      height: 93px;
       fill: #9b9b9b; }
       @media screen and (max-width: 1140px) {
         .footer__bad svg {
@@ -453,13 +465,15 @@ a {
 .head {
   position: relative;
   height: 740px;
-  padding-top: 60px;
-  background: url(../assets/img/head.png) 50% 50% no-repeat;
+  margin-top: 58px;
+  background: url(../assets/img/head-new-all.png) 50% 50% no-repeat;
   background-size: cover;
   z-index: 2; }
   @media screen and (max-width: 1140px) {
     .head {
-      height: auto; } }
+      height: auto;
+      background: url(../assets/img/head.png) 50% 50% no-repeat;
+      background-size: cover; } }
   .head-content {
     position: relative;
     max-width: 1200px;
@@ -551,6 +565,8 @@ a {
         max-width: 300px;
         justify-content: space-between;
         margin-top: 44px; } }
+    .head-buttons .ui-button {
+      box-shadow: 0px 17px 40px 0px rgba(0, 0, 0, 0.5), 0px 0px 65px 0px rgba(12, 229, 255, 0.8); }
 
 .ui-button {
   position: relative;
@@ -806,7 +822,7 @@ a {
   .heir-content {
     position: relative;
     max-width: 1200px;
-    padding: 80px 50px;
+    padding: 80px 50px 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -834,7 +850,7 @@ a {
         flex-direction: column; } }
   .heir-problem {
     width: 50%;
-    margin-bottom: 100px; }
+    margin-bottom: 70px; }
     @media screen and (max-width: 1140px) {
       .heir-problem {
         width: 100%;
@@ -858,14 +874,14 @@ a {
       .heir__subtitle {
         margin-bottom: 20px; } }
   .heir__text {
-    font-size: 15px;
+    font-size: 17px;
     font-family: "FuturaRound";
     color: #474747;
     line-height: 1.2;
     text-shadow: 0px 3px 43px rgba(0, 0, 0, 0.11);
     margin-bottom: 20px; }
     .heir__text-bold {
-      font-size: 16px;
+      font-size: 17px;
       font-family: "FuturaRound";
       color: #474747;
       line-height: 1.2;
@@ -875,7 +891,7 @@ a {
   .heir-list__item {
     position: relative;
     padding-left: 38px;
-    font-size: 15px;
+    font-size: 17px;
     font-family: "FuturaRound";
     color: #474747;
     line-height: 1.2;
@@ -893,7 +909,7 @@ a {
       left: 0; }
   .heir-sperms {
     position: absolute;
-    top: 140px;
+    top: 174px;
     left: 20px;
     width: 438px;
     height: 278px;

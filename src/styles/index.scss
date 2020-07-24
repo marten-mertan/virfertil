@@ -175,6 +175,18 @@ a{
     @media screen and (max-width: 1140px){
         padding: 0;
     }
+    &-footer{
+        max-width: 1920px;
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        @media screen and (max-width: 1140px){
+            padding: 0;
+        }
+
+    }
 }
 
 .footer{
@@ -272,6 +284,7 @@ a{
         }
     }
     &-contacts{
+        flex: 0 0 auto;
         @media screen and (max-width: 1140px){
             order: 2;
             display: flex;
@@ -342,7 +355,7 @@ a{
 
     }
     &__bad{
-        width: 596px;
+        width: 1373px;
         margin: 10px 12px 7px;
         @media screen and (max-width: 1140px){
             order: 1;
@@ -350,8 +363,8 @@ a{
             margin: 15px 0 ;
         }
         svg{
-            width: 596px;
-            height: 87px;
+            width: 100%;
+            height: 93px;
             fill: #9b9b9b;
             @media screen and (max-width: 1140px){
                 width: 100%;
@@ -388,12 +401,14 @@ a{
 .head{
     position: relative;
     height: 740px;
-    padding-top: 60px;
-    background: url(../assets/img/head.png) 50% 50% no-repeat;
+    margin-top: 58px;
+    background: url(../assets/img/head-new-all.png) 50% 50% no-repeat;
     background-size: cover;
     z-index: 2;
     @media screen and (max-width: 1140px){
         height: auto;
+        background: url(../assets/img/head.png) 50% 50% no-repeat;
+        background-size: cover;
     }
     &-content{
         position: relative;
@@ -494,6 +509,11 @@ a{
             max-width: 300px;
             justify-content: space-between;
             margin-top: 44px;
+        }
+        .ui-button{
+            box-shadow: 0px 17px 40px 0px rgba(0, 0, 0, 0.5), 0px 0px 65px 0px rgba(12, 229, 255, 0.8);
+            &-content{
+            }
         }
     }
 }
@@ -790,7 +810,7 @@ a{
     &-content{
         position: relative;
         max-width: 1200px;
-        padding: 80px 50px;
+        padding: 80px 50px 20px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -821,7 +841,7 @@ a{
     }
     &-problem{
         width: 50%;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
         @media screen and (max-width: 1140px){
             width: 100%;
             margin-bottom: 0;
@@ -849,7 +869,7 @@ a{
         }
     }
     &__text{
-        font-size: 15px;
+        font-size: 17px;
         font-family: "FuturaRound";
         color: #474747;
         line-height: 1.2;
@@ -857,7 +877,7 @@ a{
         margin-bottom: 20px;
 
         &-bold{
-            font-size: 16px;
+            font-size: 17px;
             font-family: "FuturaRound";
             color: #474747;
             line-height: 1.2;
@@ -871,7 +891,7 @@ a{
         &__item{
             position: relative;
             padding-left: 38px;
-            font-size: 15px;
+            font-size: 17px;
             font-family: "FuturaRound";
             color: #474747;
             line-height: 1.2;
@@ -892,7 +912,7 @@ a{
     }
     &-sperms{
         position: absolute;
-        top: 140px;
+        top: 174px;
         left: 20px;
         width: 438px;
         height: 278px;
